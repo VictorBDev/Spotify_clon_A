@@ -38,10 +38,6 @@ struct ButtonView: View {
                 .stroke(borderColor, lineWidth: 1)
                 .fill(background)
         )
-        //.background(background != nil ? Color(background!): .clear)
-        //.cornerRadius(45)
-        //.overlay(RoundedRectangle(cornerRadius: 45)
-            //.stroke(borderColor, lineWidth: 1))
         .padding(.horizontal, 30)
     }
 }

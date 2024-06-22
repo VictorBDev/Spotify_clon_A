@@ -9,7 +9,19 @@
 /* Begin PBXBuildFile section */
 		FB4055DD2BF9221F007588C7 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4055DC2BF9221F007588C7 /* SignUpView.swift */; };
 		FB4055E42BF93277007588C7 /* inputs.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4055E32BF93277007588C7 /* inputs.swift */; };
-		FBC543172C025E310055CB49 /* signUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC543162C025E310055CB49 /* signUpViewModel.swift */; };
+		FBA6E8772C27493B000C57AD /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA6E8762C27493B000C57AD /* MainView.swift */; };
+		FBA6E8792C274ABB000C57AD /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA6E8782C274ABB000C57AD /* LibraryView.swift */; };
+		FBA6E87C2C274D21000C57AD /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA6E87B2C274D21000C57AD /* SearchView.swift */; };
+		FBA6E87F2C274F67000C57AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBA6E87E2C274F67000C57AD /* LaunchScreen.storyboard */; };
+		FBA6E8812C275214000C57AD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA6E8802C275214000C57AD /* HomeView.swift */; };
+		FBA6E8832C27525C000C57AD /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA6E8822C27525C000C57AD /* ProfileView.swift */; };
+		FBA6E8852C2752E2000C57AD /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA6E8842C2752E2000C57AD /* LaunchView.swift */; };
+		FBA6E88A2C2753E0000C57AD /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA6E8892C2753E0000C57AD /* AppState.swift */; };
+		FBA6E88E2C2758D4000C57AD /* LaunchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA6E88D2C2758D4000C57AD /* LaunchViewModel.swift */; };
+		FBA6E8912C27604B000C57AD /* SongViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA6E8902C27604B000C57AD /* SongViewModel.swift */; };
+		FBA6E8932C2760F4000C57AD /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA6E8922C2760F4000C57AD /* Song.swift */; };
+		FBA6E8962C276378000C57AD /* SongsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA6E8952C276378000C57AD /* SongsView.swift */; };
+		FBC543172C025E310055CB49 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC543162C025E310055CB49 /* SignUpViewModel.swift */; };
 		FBC5431C2C02708F0055CB49 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FBC5431B2C02708F0055CB49 /* GoogleService-Info.plist */; };
 		FBC5431F2C0273380055CB49 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = FBC5431E2C0273380055CB49 /* FirebaseAuth */; };
 		FBC543212C0273380055CB49 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = FBC543202C0273380055CB49 /* FirebaseFirestore */; };
@@ -29,7 +41,19 @@
 /* Begin PBXFileReference section */
 		FB4055DC2BF9221F007588C7 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		FB4055E32BF93277007588C7 /* inputs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inputs.swift; sourceTree = "<group>"; };
-		FBC543162C025E310055CB49 /* signUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpViewModel.swift; sourceTree = "<group>"; };
+		FBA6E8762C27493B000C57AD /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		FBA6E8782C274ABB000C57AD /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
+		FBA6E87B2C274D21000C57AD /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		FBA6E87E2C274F67000C57AD /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FBA6E8802C275214000C57AD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		FBA6E8822C27525C000C57AD /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		FBA6E8842C2752E2000C57AD /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
+		FBA6E8892C2753E0000C57AD /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		FBA6E88D2C2758D4000C57AD /* LaunchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewModel.swift; sourceTree = "<group>"; };
+		FBA6E8902C27604B000C57AD /* SongViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongViewModel.swift; sourceTree = "<group>"; };
+		FBA6E8922C2760F4000C57AD /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		FBA6E8952C276378000C57AD /* SongsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsView.swift; sourceTree = "<group>"; };
+		FBC543162C025E310055CB49 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		FBC5431B2C02708F0055CB49 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		FBC543262C0274630055CB49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBD0186B2BEFF2BD00D2EB65 /* Spotify_clon_A.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spotify_clon_A.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,10 +90,58 @@
 			path = mock;
 			sourceTree = "<group>";
 		};
+		FBA6E8752C274924000C57AD /* main */ = {
+			isa = PBXGroup;
+			children = (
+				FBA6E8762C27493B000C57AD /* MainView.swift */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		FBA6E87A2C274CF5000C57AD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FBA6E8802C275214000C57AD /* HomeView.swift */,
+				FBA6E8822C27525C000C57AD /* ProfileView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FBA6E87D2C274EF2000C57AD /* onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				FBA6E87E2C274F67000C57AD /* LaunchScreen.storyboard */,
+				FBA6E8842C2752E2000C57AD /* LaunchView.swift */,
+			);
+			path = onboarding;
+			sourceTree = "<group>";
+		};
+		FBA6E88F2C275B89000C57AD /* models */ = {
+			isa = PBXGroup;
+			children = (
+				FBA6E8922C2760F4000C57AD /* Song.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		FBA6E8942C276274000C57AD /* screens */ = {
+			isa = PBXGroup;
+			children = (
+				FBA6E87B2C274D21000C57AD /* SearchView.swift */,
+				FBD018812BEFF3E000D2EB65 /* SignInView.swift */,
+				FBA6E8782C274ABB000C57AD /* LibraryView.swift */,
+				FB4055DC2BF9221F007588C7 /* SignUpView.swift */,
+				FBA6E8952C276378000C57AD /* SongsView.swift */,
+			);
+			path = screens;
+			sourceTree = "<group>";
+		};
 		FBC543132C025DCE0055CB49 /* viewModels */ = {
 			isa = PBXGroup;
 			children = (
-				FBC543162C025E310055CB49 /* signUpViewModel.swift */,
+				FBC543162C025E310055CB49 /* SignUpViewModel.swift */,
+				FBA6E88D2C2758D4000C57AD /* LaunchViewModel.swift */,
+				FBA6E8902C27604B000C57AD /* SongViewModel.swift */,
 			);
 			path = viewModels;
 			sourceTree = "<group>";
@@ -93,18 +165,22 @@
 		FBD0186D2BEFF2BD00D2EB65 /* Spotify_clon_A */ = {
 			isa = PBXGroup;
 			children = (
+				FBA6E8942C276274000C57AD /* screens */,
+				FBA6E88F2C275B89000C57AD /* models */,
+				FBA6E87D2C274EF2000C57AD /* onboarding */,
+				FBA6E87A2C274CF5000C57AD /* Views */,
+				FBA6E8752C274924000C57AD /* main */,
 				FBE2994A2C0BA06F00F1FE31 /* components */,
 				FBC5431B2C02708F0055CB49 /* GoogleService-Info.plist */,
 				FBC543132C025DCE0055CB49 /* viewModels */,
 				FB4055E02BF931E8007588C7 /* mock */,
 				FBD0186E2BEFF2BD00D2EB65 /* Spotify_clon_AApp.swift */,
-				FBD018812BEFF3E000D2EB65 /* SignInView.swift */,
-				FB4055DC2BF9221F007588C7 /* SignUpView.swift */,
 				FBD018722BEFF2BE00D2EB65 /* Assets.xcassets */,
 				FBD018772BEFF2BE00D2EB65 /* Persistence.swift */,
 				FBD018792BEFF2BE00D2EB65 /* Spotify_clon_A.xcdatamodeld */,
 				FBD018742BEFF2BE00D2EB65 /* Preview Content */,
 				FBC543262C0274630055CB49 /* AppDelegate.swift */,
+				FBA6E8892C2753E0000C57AD /* AppState.swift */,
 			);
 			path = Spotify_clon_A;
 			sourceTree = "<group>";
@@ -194,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBD018762BEFF2BE00D2EB65 /* Preview Assets.xcassets in Resources */,
+				FBA6E87F2C274F67000C57AD /* LaunchScreen.storyboard in Resources */,
 				FBD018732BEFF2BE00D2EB65 /* Assets.xcassets in Resources */,
 				FBC5431C2C02708F0055CB49 /* GoogleService-Info.plist in Resources */,
 			);
@@ -207,14 +284,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBC543272C0274630055CB49 /* AppDelegate.swift in Sources */,
-				FBC543172C025E310055CB49 /* signUpViewModel.swift in Sources */,
+				FBC543172C025E310055CB49 /* SignUpViewModel.swift in Sources */,
+				FBA6E88E2C2758D4000C57AD /* LaunchViewModel.swift in Sources */,
+				FBA6E88A2C2753E0000C57AD /* AppState.swift in Sources */,
 				FBE2994E2C0BA13100F1FE31 /* ButtonView.swift in Sources */,
+				FBA6E8812C275214000C57AD /* HomeView.swift in Sources */,
 				FBE2994C2C0BA0D900F1FE31 /* BackButtonView.swift in Sources */,
+				FBA6E8912C27604B000C57AD /* SongViewModel.swift in Sources */,
+				FBA6E8852C2752E2000C57AD /* LaunchView.swift in Sources */,
 				FBD0187B2BEFF2BE00D2EB65 /* Spotify_clon_A.xcdatamodeld in Sources */,
+				FBA6E8792C274ABB000C57AD /* LibraryView.swift in Sources */,
+				FBA6E8962C276378000C57AD /* SongsView.swift in Sources */,
 				FBE299502C0BA1A200F1FE31 /* StepperButton.swift in Sources */,
+				FBA6E8832C27525C000C57AD /* ProfileView.swift in Sources */,
 				FB4055E42BF93277007588C7 /* inputs.swift in Sources */,
 				FBD018782BEFF2BE00D2EB65 /* Persistence.swift in Sources */,
+				FBA6E8932C2760F4000C57AD /* Song.swift in Sources */,
 				FBD018822BEFF3E000D2EB65 /* SignInView.swift in Sources */,
+				FBA6E87C2C274D21000C57AD /* SearchView.swift in Sources */,
+				FBA6E8772C27493B000C57AD /* MainView.swift in Sources */,
 				FB4055DD2BF9221F007588C7 /* SignUpView.swift in Sources */,
 				FBD0186F2BEFF2BD00D2EB65 /* Spotify_clon_AApp.swift in Sources */,
 			);
@@ -355,6 +443,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -383,6 +472,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

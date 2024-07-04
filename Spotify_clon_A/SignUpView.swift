@@ -6,36 +6,39 @@
 //
 
 import SwiftUI
-import UIKit
 
 struct SignUpView: View {
     
     @State var counter: Int = 0
-        
-    @StateObject var signUpViewModel = SignUpvieModel()
+//    @State var data: String = ""
+    @State var email: String = ""
+    @State var password: String = ""
+    @State var genre: String = ""
+    @State var name: String = ""
+    
+    @StateObject var signUpViewModel = SignUpViewModel()
     
     init() {
         UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.white]
         UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor.white]
-       
     }
     
-    @Environment(\.dismiss) var dismiss
     var body: some View {
-        VStack {
-            ZStack {
-                Color("dark")
-                    .ignoresSafeArea()
-                VStack {
-                    ForEach(0..<$signUpViewModel.elements.count, id: \.self) {index in
+        
+        VStack{
+            ZStack{
+                Color("dark").ignoresSafeArea()
+                VStack{
+                    ForEach(0..<signUpViewModel.elements.count, id: \.self) {index in
                         if index == counter {
-                            VStack {
-                                VStack(alignment: .leading) {
+                            VStack{
+                                VStack (alignment: .leading){
                                     Text(signUpViewModel.elements[index].title)
                                         .foregroundStyle(.white)
-                                        .font(.title3)
+                                        .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                                         .fontWeight(.bold)
-                                    Group {
+                                    
+                                    Group{
                                         if signUpViewModel.elements[index].isSecureField {
                                             SecureField("", text: binding(index: index))
                                         } else {
@@ -48,52 +51,52 @@ struct SignUpView: View {
                                             .stroke(.gray, lineWidth: 1)
                                     )
                                     .background(.gray)
-                                    .foregroundStyle(.white)
                                     .padding(.bottom, 4)
+                                    .foregroundColor(.white)
                                     .keyboardType(signUpViewModel.elements[index].keyboardType)
-                                    
                                     Text(signUpViewModel.elements[index].helpText)
                                         .foregroundStyle(.white)
                                         .font(.caption2)
+                                    
                                 }
-                                HStack {
+                                HStack{
                                     if counter != 0 {
                                         StepperButton(counter: $counter, isNext: false, text: "Back")
                                     }
-                                    
                                     Spacer()
                                     
                                     if counter != signUpViewModel.elements.count - 1 {
                                         StepperButton(counter: $counter)
                                     } else {
-                                        Button {
-                                            signUpViewModel
-                                                .createUser()
+                                        Button{
+                                            signUpViewModel.createUser()
                                         } label: {
                                             Text("SignUp")
                                         }
                                     }
-                                    
-                                }.padding(.top, 30)
+                                }
+                                .padding(.top, 30)
                             }
                         }
                     }
                     Spacer()
-                }.padding()
+                }.padding(30)
             }
         }
-        .navigationTitle("Create a count")
+        .navigationTitle("Create Account")
         .navigationBarBackButtonHidden(true)
-        .toolbar {
-            ToolbarItem(placement: .topBarLeading) {
+        .toolbar{
+            ToolbarItem(placement: .topBarLeading){
                 BackButtonView()
             }
         }
-        
     }
-    
-    private func binding (index: Int) -> Binding<String> {
-        return $signUpViewModel.elements[index].value
+        
+        private func binding(index:Int) -> Binding<String> {
+            return $signUpViewModel.elements[index].value
+        
+        
+        
     }
 }
 

@@ -8,8 +8,6 @@
 import SwiftUI
 
 struct StepperButton: View {
-    
-    //binding recibe
     @Binding var counter: Int
     var isNext: Bool = true
     var text: String = "Next"
@@ -21,7 +19,6 @@ struct StepperButton: View {
             } else {
                 counter -= 1
             }
-            
         } label: {
             Text(text)
                 .foregroundStyle(.white)
@@ -32,13 +29,11 @@ struct StepperButton: View {
         .frame(height: 42)
         .background(
             RoundedRectangle(cornerRadius: 21)
-            .stroke(Color("primary"), lineWidth: 1)
-            .fill(Color("primary"))
+                .stroke(Color("primary"), lineWidth: 1)
+                .fill(Color("primary"))
         )
-        
     }
 }
-
 
 #Preview {
     StepperButton(counter: .constant(0))

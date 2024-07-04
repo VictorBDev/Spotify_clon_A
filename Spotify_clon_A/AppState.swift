@@ -7,11 +7,12 @@
 
 import Foundation
 
-class AppState: ObservableObject {
+class AppState: ObservableObject{
     
-    //Que es singleton patter: Se va a instaciar a si mismo
-    //singleton pattern
+    // Singleton Pattern
+    // Se instancia a sí mismo
     static let shared = AppState()
+    // static para utilizar la variable de una clase sin necesidad de instanciar la clase
     
     enum AppScreens {
         case launch
@@ -20,7 +21,5 @@ class AppState: ObservableObject {
     }
     
     @Published var currentScreen: AppScreens = .launch
+    
 }
-
-
-

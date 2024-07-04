@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SongsView: View {
-    @StateObject var songViewModel = SongViewModel()
+    @StateObject var songViewModel = SongsViewModel()
     
     var body: some View {
         ZStack {

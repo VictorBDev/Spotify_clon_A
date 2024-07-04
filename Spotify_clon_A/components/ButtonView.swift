@@ -8,10 +8,9 @@
 import SwiftUI
 
 struct ButtonView: View {
-    
     var title: String
     var background: Color = .clear
-    var color : Color = .white
+    var color: Color = .white
     var borderColor: Color = .white
     var image: String = ""
     
@@ -32,6 +31,10 @@ struct ButtonView: View {
                 .padding(.vertical, 15)
                 .padding(.horizontal, 10)
             Spacer()
+            if image != "" {
+                Spacer()
+            }
+             
         }
         .background(
             RoundedRectangle(cornerRadius: 45)
@@ -43,5 +46,5 @@ struct ButtonView: View {
 }
 
 #Preview {
-    ButtonView(title: "Continue with Google", background: Color(.primary), color: .black)
+    ButtonView(title: "Continue with Google", background: Color("dark"), borderColor: .red)
 }

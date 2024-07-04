@@ -10,7 +10,7 @@ import SwiftUI
 
 struct SignInView: View {
     var body: some View {
-        NavigationStack {
+        NavigationStack{
             VStack {
                 ZStack {
                     Color("dark").ignoresSafeArea()
@@ -18,40 +18,42 @@ struct SignInView: View {
                         Image("bg-login")
                             .resizable()
                             .frame(height: 250)
-                            .padding()
                         
                         Image("logo")
                             .resizable()
-                            .frame(width: 53, height: 53)
+                            .frame(width: 53,height: 53)
                         
-                        Text("Millions of Songs")
-                            .font(.title)
+                        Text("Millions of songs.")
+                            .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                             .foregroundStyle(.white)
-                            .fontWeight(.bold)
+                            .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                             .padding(.top)
                         
                         Text("Free on Spotify")
-                            .font(.title)
+                            .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                             .foregroundStyle(.white)
-                            .fontWeight(.bold)
+                            .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                         
-                        VStack(spacing: 20) {
-                            ButtonView(title: "Sign up free", background:
-                                        Color(.primary), color: .black)
-                            ButtonView(title: "Continue with Google")
-                            ButtonView(title: "Continue with Facebook")
-                            ButtonView(title: "Continu with Apple")
+                        VStack(spacing:20) {
+                            ButtonView(title:"Sign in free", background: Color(.primary), color: .black)
+                            ButtonView(title:"Continue with Google", image: "google")
+                            ButtonView(title:"Continue with Facebook", image:"facebook")
+                            ButtonView(title:"Continue with Apple", image: "apple")
                             NavigationLink("Login", destination: SignUpView())
                                 .foregroundStyle(.white)
                                 .fontWeight(.bold)
+                            NavigationLink("Search Artist", destination: SearchArtistView())
+                                .foregroundStyle(.white)
+                                .fontWeight(.bold)
+                            SongsView()
                         }.padding(.top)
-                        
                     }
                 }
-                
             }
+            
+            
         }
-        
+       
     }
 }
 

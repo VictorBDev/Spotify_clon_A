@@ -13,6 +13,6 @@ class LaunchViewModel: ObservableObject {
     var appState: AppState = .shared
     
     init() {
-        appState.currentScreen = Auth.auth().currentUser == nil ? .signIn : .main
+        appState.currentScreen = Auth.auth().currentUser !== nil ? .signIn : .main
     }
 }
